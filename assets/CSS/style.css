@@ -1,0 +1,185 @@
+body {
+    background: linear-gradient(to right, white, gray);
+    font-family: ChelseaMarket, sans-serif;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#video1 {
+    height: 400px;
+    width: 700px;
+}
+
+#video2 {
+    height: 400px;
+    width: 700px;
+}
+
+#vapor1 {
+    height: 300px;
+    width: 300px;
+    filter: blur(2px);
+}
+
+#vapor2 {
+    height: 300px;
+    width: 300px;
+    filter: contrast(2);
+
+}
+
+
+#imagen2 {
+    height: 250px;
+    width: 300px;
+}
+
+#imagengrande {
+    height: 350px;
+    width: 300px;
+}
+
+
+table {
+    width: 400px;
+    height: 100px;
+    padding: 25px;
+    border-color: black;
+    border: 3px solid black;
+    border-top-color: black;
+    border-collapse: collapse;
+
+}
+
+
+
+th {
+    background-color: blue;
+    border-collapse: collapse;
+    color: white;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-bottom: 3px solid black;
+}
+
+td {
+    text-align: center;
+    background-color: azure;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+.agotado {
+    color: red;
+    text-align: right;
+}
+
+.disponible {
+    color: rgba(1, 102, 48);
+    text-align: right;
+}
+
+.por-llegar {
+    color: #38D5BE;
+    text-align: right;
+}
+
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+
+}
+
+
+div {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    position: relative;
+    animation-name: myAnimation;
+    animation-duration: 4s;
+}
+
+@keyframes myAnimation {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: blue;
+    }
+
+    50% {
+        background-color: yellow;
+    }
+
+    75% {
+        background-color: orange;
+    }
+
+    100% {
+        background-color: green;
+    }
+}
+
+
+/* Cambio de logo de listas */
+li {
+    list-style: armenian;
+}
+
+
+
+/* Aqui estoy declarando la parte de la rotacion de imagen */
+
+div.rotar {
+    float: left;
+    transform: rotate(15deg);
+}
+
+p::first-letter {
+    font-size: 25px;
+}
+
+.responsive-video {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 18px;
+        background-color: blue;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    h1 {
+        font-size: 24px;
+        background-color: red;
+    }
+}
+
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 32px;
+        background-color: lightblue;
+    }
+}
