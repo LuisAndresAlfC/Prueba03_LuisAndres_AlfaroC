@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/CSS/style.css">
-    <link rel="stylesheet" href="assets/Estilo/ChelseaMarket-Regular.ttf">
 </head>
 
 <body>
     <header>
         <h1><strong>Nook - Tallas y Precios</strong></h1>
-        <ol>
-            <a href="#Inicio">Inicio</a>|
-            <a href="#Estilos">Estilos</a>
-        </ol>
+        <nav>
+            <ol>
+                <li><a href="Inicio.html">Inicio</a></li>
+                <li><a href="Estilos.html">Estilos</a></li>
+            </ol>
+        </nav>
     </header>
 
     <main>
@@ -51,45 +52,13 @@
         <!-- Imagen Con Contraste -->
         <h2><strong>Nike Vapor</strong></h2>
         <img id="vapor2" src="assets/Imagenes/VAPOR12LIME_600x.webp" alt="assets/Imagenes/baJiUaKd79jhuVCE9rrr4B.jpg">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+
 
 
         <h1>Uso de rotacion o transform</h1>
-
-
-
         <div class="rotar">
             <img src="assets/Imagenes/VAPOR12LIME_600x.webp" width="240px" height="240px">
         </div>
-
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
 
         <h2>Si deseas mas Informacion de algun producto, porfavor rellene el siguiente formulario</h2>
 
@@ -98,17 +67,17 @@
 
         <!--Formulario-->
         <form>
-            <legend>
-                Modelo
+            <fieldset>
+            <legend>Modelo</legend>
                 <input type="text" required>
-                Talla
+                <legend>Talla</legend>
                 <input type="number" min="0" max="43">
-                Correo
+                <legend>Correo</legend>
                 <input type="email" required>
                 <output>
                     <button>Enviar</button>
                 </output>
-            </legend>
+            </fieldset>
         </form>
         <br></br>
 
@@ -153,11 +122,6 @@
         <h1>Video Responsive</h1>
 
         <video class="responsive-video" src="assets/Videos/videoplayback.mp4" controls autoplay loop></video>
-
-
-
-
-
 
         <!-- Aqui Empleo la Animation -->
         <h1>Aqui Empleo la Animacion de Cambio de Colores</h1>
